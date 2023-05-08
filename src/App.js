@@ -1,22 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import amiya from './amiya.gif';
+import rhodes from './rhodes.png';
+import Arknights from "./component/Arknights";
+import Quote from "./component/Quote";
+
 
 function App() {
   return (
     <div className="App">
+      <img className="rhodes" src={rhodes} width="125px"/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1>A List Of Arknights Characters</h1>
+      <img src={amiya} className="App-logo" alt="logo"/>
+        <Quote />
+        <Arknights />
       </header>
     </div>
   );
